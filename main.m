@@ -9,14 +9,15 @@ global full_range
 numFacilities = 3;
 networkID = '9Node-network';
 numNodes = 9;
-numRoutes = 4;       % number of candidate routes = maximum num of pads
-full_range = 4;      % set full capacity vehicle range (in mile)
+numRoutes = 5;       % number of candidate routes = maximum num of pads
+full_range = 5;      % set full capacity vehicle range (in mile)
 
 b_qh_all = [];
 a_hp_all = [];
 
 
 for numPads = 0 : numFacilities
+
     
     numStations = numFacilities - numPads;
         
@@ -34,7 +35,6 @@ for numPads = 0 : numFacilities
         a_hp_all = [a_hp_all; a_hp];
 
 end
-
 
 % 
 % % compute refuled flow for each combination

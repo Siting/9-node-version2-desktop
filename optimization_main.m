@@ -5,7 +5,7 @@ clc
 % set parameters
 numFacilities = 3;
 numNodes = 9;       % number of nodes on the network
-numRoutes = 4;      % number of candidate routes
+numRoutes = 5;      % number of candidate routes
 
 % load b_qh, a_hp, flow
 load('./result/b_qh');
